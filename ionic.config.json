@@ -1,0 +1,7 @@
+{
+  "name": "sigap-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
