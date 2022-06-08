@@ -6,6 +6,7 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "tsconfigRootDir": "sigap-app",
         "createDefaultProgram": true
       },
       "extends": [
@@ -35,13 +36,17 @@
             "prefix": "app",
             "style": "camelCase"
           }
-        ]
+        ],
+        "max-len": "off"
       }
     },
     {
       "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
       "rules": {}
     }
   ]
+
 }
